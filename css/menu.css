@@ -1,0 +1,440 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom: 2px solid rgb(72, 194, 194);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(230, 250, 255);
+    z-index: 5;
+    align-items: center;
+}
+
+#nom {
+    font-size: 2vw;
+    letter-spacing: 10px;
+    padding-left: 5%;
+    position: relative;
+    border: 5px solid red;
+}
+
+#menu {
+    width: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+#menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+
+
+#menu #cv {
+    border: 1px solid rgb(72, 194, 194);
+    border-radius: 5px;
+    color: rgb(72, 194, 194);
+    padding: 10px;
+}
+
+
+#menu a:hover {
+    border-bottom: 1px solid rgb(72, 194, 194);
+    color: rgb(72, 194, 194);
+}
+
+
+
+
+
+
+#mail {
+    bottom: 50px;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    text-align: end;
+    position: fixed;
+    z-index: 7;
+}
+
+#mail a,
+#reseau a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+#mail #contenue a:hover {
+    color: rgb(72, 194, 194);
+}
+
+#mail #contenue a::after {
+    background-color: black;
+    content: "";
+    display: inline-block;
+    width: 90px;
+    height: 1px;
+    margin-bottom: 3px;
+    margin-left: 30px;
+    pointer-events: none;
+}
+
+#mail #contenue {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#reseau {
+    bottom: 50px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    text-align: start;
+    position: fixed;
+    z-index: 5;
+}
+
+
+#reseau #contenue {
+    display: flex;
+    flex-direction: row;
+}
+
+#reseau #contenue #logoGauche::before {
+    background-color: black;
+    content: "";
+    display: inline-block;
+    width: 90px;
+    height: 1px;
+    margin-bottom: 3px;
+    margin-right: 30px;
+    pointer-events: none;
+}
+
+
+#reseau #logoMilieu {
+    margin-left: 30px;
+}
+
+#reseau #contenue img {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+}
+
+#reseau #contenue img:hover {
+    background-color: rgb(72, 194, 194);
+}
+
+#accueil {
+    margin-top: 250px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#accueil #contenue #titre {
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+#accueil #texte1,
+#accueil #texte3 {
+    color: rgb(72, 194, 194);
+    font-size: 20px;
+}
+
+#accueil #texte2 {
+    font-size: 1.5rem;
+    padding-left: 30%;
+    padding-right: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+#presentation {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#presentation #titre,
+#experience #titre,
+#contact #titre {
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    letter-spacing: 5px;
+}
+
+#presentation #titre::after,
+#experience #titre::after,
+#contact #titre::after,
+#accueil #titre::after {
+    background-color: rgb(72, 194, 194);
+    content: "";
+    width: 200px;
+    height: 1px;
+    margin-top: 3px;
+    margin-left: 30px;
+}
+
+#presentation #titre::before,
+#experience #titre::before,
+#contact #titre::before,
+#accueil #titre::before {
+    background-color: rgb(72, 194, 194);
+    content: "";
+    width: 200px;
+    height: 1px;
+    margin-top: 3px;
+    margin-right: 30px;
+}
+
+#presentation #texte {
+    font-size: 1.5rem;
+    padding-left: 30%;
+    padding-right: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+#presentation #texte a {
+    text-decoration: none;
+    color: rgb(72, 194, 194);
+}
+
+#presentation #button a {
+    border: 1px solid rgb(72, 194, 194);
+    border-radius: 5px;
+    padding: 0.5rem 1.5rem;
+    color: rgb(72, 194, 194);
+    text-decoration: none;
+}
+
+#presentation #button a:hover {
+    background-color: rgb(0, 255, 255, 0.1);
+}
+
+#presentation #button {
+    margin-top: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+#experience #h2 {
+    color: black;
+    text-align: center;
+    width: 100%;
+}
+
+#experience #biosphere,
+#experience #vm,
+#experience #odomo,
+#experience #thales,
+#experience #bd,
+#experience #hyperstellar,
+#experience #computer,
+#experience #labyrinthe,
+#experience #guiblix {
+    display: inline-block;
+    width: 280px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 2% 3%;
+}
+
+#experience *:not(h2) {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+
+
+
+#langage {
+    color: black;
+    text-align: center;
+}
+
+#experience {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+#experience #contenue,
+#presentation #contenue {
+    margin-top: 10%;
+}
+
+#experience img {
+    width: 100%;
+    height: 70%;
+}
+
+
+#experience #contenue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#experience #projet {
+    width: 70%;
+}
+
+#experience #description {
+    text-align: center;
+}
+
+#contact #description {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+#contact #contenue #texte {
+    text-align: center;
+    width: 40%;
+    font-size: 1.3em;
+}
+
+#contact #contenue {
+    display: flex;
+    justify-content: center;
+}
+
+#contact {
+    margin-bottom: 10%;
+}
+
+#contact #contactButton a {
+    text-decoration: none;
+    color: rgb(72, 194, 194);
+    border: 1px solid rgb(72, 194, 194);
+    border-radius: 5px;
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+}
+
+#contact #contactButton {
+    display: flex;
+    justify-content: center;
+}
+
+#contact #contactButton:hover a {
+    background-color: rgb(0, 255, 255, 0.1);
+}
+
+footer p {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+@media screen and (min-width:1400px) {
+
+    #imgMenu {
+        position: absolute;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    #menu #cv:hover {
+        background-color: rgb(0, 255, 255, 0.1);
+    }
+
+    #menu #cv a {
+        border: none;
+        color: rgb(72, 194, 194);
+    }
+
+    #accueil #contenue #titre {
+        font-size: 35px;
+        letter-spacing: 5px;
+    }
+
+}
+
+@media screen and (max-width:1399px) {
+    #menu {
+        display: flex;
+        flex-direction: column;
+        margin-top: 250px;
+        right: 0;
+        align-items: center;
+        width: 200px;
+        position: absolute;
+        background-color: rgb(230, 250, 255);
+    }
+
+    #menu a {
+        color: black;
+        margin: 5px;
+    }
+
+    #menu #cv {
+        color: black;
+    }
+
+    header {
+        height: 100px;
+        width: 100%;
+    }
+
+    #menu #cv {
+        border: none;
+    }
+
+    #imgMenu img {
+        visibility: visible;
+        pointer-events: all;
+        margin-right: 20px;
+    }
+
+    #imgMenu img:hover {
+        border: none;
+        cursor: pointer;
+    }
+
+
+
+    #accueil #contenue #titre {
+        font-size: 2.5vw;
+        letter-spacing: 3px;
+    }
+
+}
