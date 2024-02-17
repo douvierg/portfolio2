@@ -20,6 +20,9 @@
                     <a href="CV_Douvier_Guillaume.pdf">Mon CV</a>
                 </div>
             </div>
+            <div id="imgMenu">
+                <img src="img/menuBurger.png" alt="image menu burger" id="burger">
+            </div>
         </header>
         <div id="mail">
             <div id="contenue">
@@ -43,7 +46,7 @@
             </div>
             <div id="contenue">
                 <div id="img">
-                    <img src="/img/bios.PNG" alt="biosphere picture">
+                    <img src="img/bios.PNG" alt="biosphere picture">
                 </div>
                 <div id="texte">
                     <p> Le projet biosphere a été réalisé au début individuellement en complétant un programme donné.
@@ -60,6 +63,24 @@
         <footer>
             <p>&copy; Douvier Guillaume | 2024</p>
         </footer>
+        <script>
+            var image = document.getElementById("burger");
+            var texte = document.getElementById("menu");
+    
+            image.addEventListener("click", function () {
+                if (texte.style.display === "none") {
+                    texte.style.display = "flex";
+                } else {
+                    texte.style.display = "none";
+                }
+            });
+    
+            image.addEventListener("transitionend", function () {
+                if (image.style.visibility === "hidden") {
+                    text.style.visibility = "visible";
+                }
+            });
+        </script>
     </body>
 </html>
 

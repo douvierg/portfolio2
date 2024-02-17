@@ -18,11 +18,8 @@ header {
 }
 
 #nom {
-    font-size: 2vw;
-    letter-spacing: 10px;
     padding-left: 5%;
     position: relative;
-    border: 5px solid red;
 }
 
 #menu {
@@ -55,21 +52,6 @@ header {
     color: rgb(72, 194, 194);
 }
 
-
-
-
-
-
-#mail {
-    bottom: 50px;
-    right: 0;
-    position: absolute;
-    width: 100%;
-    text-align: end;
-    position: fixed;
-    z-index: 7;
-}
-
 #mail a,
 #reseau a {
     text-decoration: none;
@@ -96,17 +78,6 @@ header {
     display: flex;
     flex-direction: row-reverse;
 }
-
-#reseau {
-    bottom: 50px;
-    left: 0;
-    position: absolute;
-    width: 100%;
-    text-align: start;
-    position: fixed;
-    z-index: 5;
-}
-
 
 #reseau #contenue {
     display: flex;
@@ -140,7 +111,6 @@ header {
 }
 
 #accueil {
-    margin-top: 250px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -151,7 +121,6 @@ header {
     align-items: center;
     display: flex;
     justify-content: center;
-
 }
 
 #accueil #texte1,
@@ -162,8 +131,6 @@ header {
 
 #accueil #texte2 {
     font-size: 1.5rem;
-    padding-left: 30%;
-    padding-right: 30%;
     display: flex;
     flex-direction: column;
 }
@@ -182,8 +149,6 @@ header {
     align-items: center;
     display: flex;
     justify-content: center;
-    font-size: 35px;
-    letter-spacing: 5px;
 }
 
 #presentation #titre::after,
@@ -212,10 +177,9 @@ header {
 
 #presentation #texte {
     font-size: 1.5rem;
-    padding-left: 30%;
-    padding-right: 30%;
     display: flex;
     flex-direction: column;
+
 }
 
 #presentation #texte a {
@@ -279,8 +243,6 @@ header {
     position: relative;
 }
 
-
-
 #langage {
     color: black;
     text-align: center;
@@ -307,7 +269,6 @@ header {
     height: 70%;
 }
 
-
 #experience #contenue {
     display: flex;
     flex-direction: column;
@@ -316,9 +277,19 @@ header {
 
 #experience #projet {
     width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-#experience #description {
+#experience #projet > div {
+    width: 280px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 2% 3%;
+    display: inline-block;
+    background-color: #f9f9f9;
     text-align: center;
 }
 
@@ -329,7 +300,6 @@ header {
 
 #contact #contenue #texte {
     text-align: center;
-    width: 40%;
     font-size: 1.3em;
 }
 
@@ -387,6 +357,56 @@ footer p {
         letter-spacing: 5px;
     }
 
+    #nom{
+        font-size: 2vw;
+        letter-spacing: 10px;
+    }
+
+    #accueil{
+        margin-top: 250px;
+    }
+
+
+
+    #presentation #titre,
+    #experience #titre,
+    #contact #titre {
+        font-size: 35px;
+        letter-spacing: 5px;
+    }
+
+    #accueil #texte2{
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+
+    #presentation #texte{
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+
+    #contact #contenue #texte{
+        width: 40%;
+    }
+    #mail {
+        bottom: 50px;
+        right: 0;
+        position: absolute;
+        width: 100%;
+        text-align: end;
+        position: fixed;
+        z-index: 7;
+    }
+    #reseau {
+        bottom: 50px;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        text-align: start;
+        position: fixed;
+        z-index: 5;
+    }
+
 }
 
 @media screen and (max-width:1399px) {
@@ -429,12 +449,105 @@ footer p {
         border: none;
         cursor: pointer;
     }
-
-
-
-    #accueil #contenue #titre {
+    #accueil #contenue #titre,
+    #presentation #contenue #titre,
+    #experience #contenue #titre,
+    #contact #titre {
         font-size: 2.5vw;
         letter-spacing: 3px;
     }
+    #nom {
+        font-size: 20px;
+        letter-spacing: 8px;
+    }   
+    #accueil{
+        margin-top: 200px;
+    }
 
+    #accueil #texte2{
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+
+    #presentation #texte{
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+
+    #contact #contenue #texte{
+        width: 40%;
+    }
+
+    #mail {
+        bottom: 50px;
+        right: 0;
+        position: absolute;
+        width: 100%;
+        text-align: end;
+        position: fixed;
+        z-index: 7;
+    }
+    #reseau {
+        bottom: 50px;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        text-align: start;
+        position: fixed;
+        z-index: 5;
+    }
+}
+
+@media screen and (max-width:900px) {
+    #nom {
+        font-size: 20px;
+        letter-spacing: 8px;
+        font-weight: bold;
+    }  
+    #menu {
+        margin-top: 300px;
+    }
+    #accueil{
+        margin-top: 150px;
+    }
+
+    #accueil #contenue #titre,
+    #presentation #contenue #titre,
+    #experience #contenue #titre,
+    #contact #titre {
+        font-size: 20px;
+        letter-spacing: 5px;
+        text-align: center;
+    }
+
+    #accueil #texte2{
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    #presentation #texte{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    #contact #contenue #texte{
+        width: 70%;
+    }
+
+    footer{
+        margin-bottom: 100px;
+    }
+
+    #reseau #contenue #logoGauche::before,
+    #mail #contenue a::after{
+        background-color: rgb(72, 194, 194);
+    }
+
+    #barre{
+        position: relative;
+    }
+
+    #mail,
+    #reseau{
+        position: absolute;
+    }
 }
