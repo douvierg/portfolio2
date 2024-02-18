@@ -105,9 +105,9 @@ body{
         position: absolute;
         bottom: 0;
         width: 100%;
-        background-color: rgb(230, 250, 255); /* Couleur de fond du footer */
         padding: 20px; /* Ajustez le padding selon vos besoins */
         text-align: center; /* Centrage du texte */
+        font-size: 1.5rem;
     }
 
     #reseau #contenue #logoGauche::before,
@@ -119,9 +119,9 @@ body{
         position: absolute;
         bottom: 0;
         width: 100%;
-        background-color: rgb(230, 250, 255); /* Couleur de fond du footer */
         padding: 20px; /* Ajustez le padding selon vos besoins */
         text-align: center; /* Centrage du texte */
+        font-size: 1.5rem;
     }
 
 }
