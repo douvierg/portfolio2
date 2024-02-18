@@ -529,14 +529,14 @@ footer p {
     }
 
     #accueil #texte2{
-        padding-left: 10%;
-        padding-right: 10%;
-        font-size: 2.5vw;
+        padding-left: 15%;
+        padding-right: 15%;
+        font-size: 1.5rem;
     }
 
     #presentation #texte{
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 15%;
+        padding-right: 15%;
     }
     #contact #contenue #texte{
         width: 70%;
@@ -564,17 +564,5 @@ footer p {
         margin: 10% 10%;
     }
 
-    #experience #biosphere,
-    #experience #vm,
-    #experience #odomo,
-    #experience #thales,
-    #experience #bd,
-    #experience #hyperstellar,
-    #experience #computer,
-    #experience #labyrinthe,
-    #experience #guiblix {
-    width: 320px;
-    height: 240px;
-}
-
+    
 }
