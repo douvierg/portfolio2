@@ -529,8 +529,9 @@ footer p {
     }
 
     #accueil #texte2{
-        padding-left: 20%;
-        padding-right: 20%;
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 2.5vw;
     }
 
     #presentation #texte{
@@ -562,4 +563,18 @@ footer p {
     #experience #projet > div {
         margin: 10% 10%;
     }
+
+    #experience #biosphere,
+    #experience #vm,
+    #experience #odomo,
+    #experience #thales,
+    #experience #bd,
+    #experience #hyperstellar,
+    #experience #computer,
+    #experience #labyrinthe,
+    #experience #guiblix {
+    width: 320px;
+    height: 240px;
+}
+
 }
