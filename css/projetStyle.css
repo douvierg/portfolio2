@@ -101,8 +101,13 @@ body{
         width: 80%;
     }
 
-    footer{
-        margin-bottom: 100px;
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: rgb(230, 250, 255); /* Couleur de fond du footer */
+        padding: 20px; /* Ajustez le padding selon vos besoins */
+        text-align: center; /* Centrage du texte */
     }
 
     #reseau #contenue #logoGauche::before,
@@ -111,11 +116,12 @@ body{
     }
 
     #barre{
-        position: relative;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: rgb(230, 250, 255); /* Couleur de fond du footer */
+        padding: 20px; /* Ajustez le padding selon vos besoins */
+        text-align: center; /* Centrage du texte */
     }
 
-    #mail,
-    #reseau{
-        position: absolute;
-    }
 }
