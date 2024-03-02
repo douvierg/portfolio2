@@ -103,10 +103,14 @@ header {
 #reseau #contenue img {
     width: 20px;
     height: 20px;
+}
+
+#reseau #contenue #logoGauche img {
     background-color: black;
 }
 
-#reseau #contenue img:hover {
+#reseau #contenue #logoGauche img:hover,
+#reseau #contenue #logoMilieu img:hover {
     background-color: rgb(72, 194, 194);
 }
 
@@ -564,5 +568,7 @@ footer p {
         margin: 10% 10%;
     }
 
-    
+    #contactButton{
+        width: auto;
+    }
 }
